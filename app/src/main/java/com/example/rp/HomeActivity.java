@@ -40,7 +40,7 @@ public class HomeActivity extends AppCompatActivity {
         announcement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), announcements.class);
+                Intent intent = new Intent(view.getContext(), Announcements.class);
                 view.getContext().startActivity(intent);}
         });
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_resume_creator"
+        android:icon="@drawable/ic_newsfeed"
+        android:title="Resume" />
+
+    <item
+        android:id="@+id/nav_quiz"
+        android:icon="@drawable/ic_ongoing"
+        android:title="Quiz" />
+
+    <item
+        android:id="@+id/nav_announcements"
+        android:icon="@drawable/ic_story"
+        android:title="Announcements" />
+</menu>
