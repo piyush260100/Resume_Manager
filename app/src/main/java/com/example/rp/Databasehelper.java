@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 public class Databasehelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "rp.dat";
 
-    public DatabaseHelper(Context context) { super(context,DATABASE_NAME,null,1);
+    public Databasehelper(Context context) { super(context,DATABASE_NAME,null,1);
         SQLiteDatabase db;
         db = this.getWritableDatabase();
     }
