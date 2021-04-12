@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signUpText"
-        android:textColorHint="@color/colorAccent"
+        android:textColorHint="@color/blue"
         app:layout_constraintTop_toBottomOf="@+id/signUpText">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -37,14 +37,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/edit_text_button2"
             android:backgroundTint="@color/whiteTransparent"
             android:hint="Name"
             android:padding="10dp"
-            android:textColor="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textColor="@color/headingColor"
+            android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/etName"
-        android:textColorHint="@color/colorAccent"
+        android:textColorHint="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etName">
@@ -68,7 +68,8 @@
             android:backgroundTint="@color/whiteTransparent"
             android:hint="Email"
             android:padding="10dp"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/headingColor"
+            android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -76,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/etEmail"
-        android:textColorHint="@color/colorAccent"
+        android:textColorHint="@color/blue"
         app:layout_constraintTop_toBottomOf="@+id/etEmail">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -91,7 +92,8 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:padding="10dp"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/headingColor"
+            android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -99,7 +101,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/etPass"
-        android:textColorHint="@color/colorAccent"
+        android:textColorHint="@color/blue"
         app:layout_constraintTop_toBottomOf="@+id/etPass">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -113,7 +115,8 @@
             android:backgroundTint="@color/whiteTransparent"
             android:hint="Year Of Passing"
             android:padding="10dp"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/headingColor"
+            android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <HorizontalScrollView
