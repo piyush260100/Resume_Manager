@@ -87,6 +87,10 @@ public class HomeActivity extends AppCompatActivity {
                 view.getContext().startActivity(intent3);}
         });
 
+        if (ema.equals("admin")) {
+            edit.setVisibility(View.GONE);
+        }
+
         editprofile.setOnClickListener(new View.OnClickListener()
         {
             @Override
