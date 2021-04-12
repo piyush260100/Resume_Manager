@@ -7,7 +7,7 @@
     android:background="@android:color/holo_green_light" >
 
     <TextView
-        android:id="@+id/navHeadEmail2"
+        android:id="@+id/navHeadEmail"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="24dp"
@@ -18,10 +18,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navHeadName2" />
+        app:layout_constraintTop_toBottomOf="@+id/navHeadName" />
 
     <TextView
-        android:id="@+id/navHeadName2"
+        android:id="@+id/navHeadName"
         android:layout_width="405dp"
         android:layout_height="31dp"
         android:layout_marginTop="24dp"
@@ -32,10 +32,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navHeadImage2" />
+        app:layout_constraintTop_toBottomOf="@+id/navHeadImage" />
 
     <ImageView
-        android:id="@+id/navHeadImage2"
+        android:id="@+id/navHeadImage"
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:layout_gravity="center_horizontal"
