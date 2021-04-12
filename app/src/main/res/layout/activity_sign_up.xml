@@ -29,9 +29,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signUpText"
-        android:layout_marginBottom="30dp"
-        android:textColorHint="@color/colorAccent">
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpText">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/edit_text_button2"
+            android:backgroundTint="@color/whiteTransparent"
+            android:hint="Name"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -39,9 +52,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/etName"
-        android:layout_marginBottom="30dp"
-        android:textColorHint="@color/colorAccent">
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/edit_text_button2"
+            android:backgroundTint="@color/whiteTransparent"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -49,9 +76,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/etEmail"
-        android:layout_marginBottom="30dp"
-        android:textColorHint="@color/colorAccent">
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signupPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/edit_text_button2"
+            android:backgroundTint="@color/whiteTransparent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -59,9 +99,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/etPass"
-        android:layout_marginBottom="30dp"
-        android:textColorHint="@color/colorAccent">
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@+id/etPass">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signupYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/edit_text_button2"
+            android:backgroundTint="@color/whiteTransparent"
+            android:hint="Year Of Passing"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <HorizontalScrollView
@@ -70,13 +122,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/etYear"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
-        android:background="@color/btcolor"
-        android:padding="10dp"
+        android:background="@drawable/square_box"
+        android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signupYear">
+        app:layout_constraintTop_toBottomOf="@+id/etYear">
 
         <LinearLayout
             android:id="@+id/imageLinearLayout"
@@ -159,67 +211,11 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/signupYear"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/edit_text_button2"
-        android:hint="Year Of Passing"
-        android:padding="10dp"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintEnd_toEndOf="@+id/signupPassword"
-        app:layout_constraintStart_toStartOf="@+id/signupPassword"
-        app:layout_constraintTop_toBottomOf="@+id/signupPassword" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/signupPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/edit_text_button2"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="10dp"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintEnd_toEndOf="@+id/signupEmail"
-        app:layout_constraintStart_toStartOf="@+id/signupEmail"
-        app:layout_constraintTop_toBottomOf="@+id/signupEmail" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/signupEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/edit_text_button2"
-        android:hint="Email"
-        android:padding="10dp"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintEnd_toEndOf="@+id/signupName"
-        app:layout_constraintStart_toStartOf="@+id/signupName"
-        app:layout_constraintTop_toBottomOf="@+id/signupName" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/signupName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/edit_text_button2"
-        android:hint="Name"
-        android:padding="10dp"
-        android:textColor="@color/colorAccent"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signUpText" />
-
     <Button
         android:id="@+id/create_account_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/rounded_button"
         android:text="Create Account"
         android:textStyle="bold"
