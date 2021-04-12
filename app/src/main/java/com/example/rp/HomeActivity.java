@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         quiz_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = new Intent(view.getContext(), quiz_time.class);
+                Intent intent2 = new Intent(view.getContext(), QuizTime.class);
                 view.getContext().startActivity(intent2);}
         });
 
