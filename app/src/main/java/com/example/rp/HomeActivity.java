@@ -30,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
         resume_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(view.getContext(), resume_creator.class);
+                Intent intent1 = new Intent(view.getContext(), ResumeCreator.class);
                 view.getContext().startActivity(intent1);}
         });
 
