@@ -3,15 +3,19 @@ package com.example.rp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
+
+import static com.example.rp.R.id.Quiz_Time_buton;
 
 public class HomeActivity extends AppCompatActivity {
 
-    ConstraintLayout resume;
-    ConstraintLayout quiz;
-    ConstraintLayout announcement;
+    ConstraintLayout resume_view;
+    ConstraintLayout quiz_view;
+    ConstraintLayout announcement_view;
 
 
     @Override
@@ -19,29 +23,29 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        resume=findViewById(R.id.resume_creator_view);
-        quiz=findViewById(R.id.quiz_view);
-        announcement=findViewById(R.id.announcement_view);
+        resume_view=findViewById(R.id.resume_creator_view);
+        announcement_view=findViewById(R.id.announcement_view);
+        quiz_view=findViewById(R.id.announcement_view);
 
-        resume.setOnClickListener(new View.OnClickListener() {
+        resume_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), resume_creator.class);
-                view.getContext().startActivity(intent);}
+                Intent intent1 = new Intent(view.getContext(), resume_creator.class);
+                view.getContext().startActivity(intent1);}
         });
 
-        quiz.setOnClickListener(new View.OnClickListener() {
+        quiz_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), quiz_time.class);
-                view.getContext().startActivity(intent);}
+                Intent intent2 = new Intent(view.getContext(), quiz_time.class);
+                view.getContext().startActivity(intent2);}
         });
 
-        announcement.setOnClickListener(new View.OnClickListener() {
+        announcement_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), Announcements.class);
-                view.getContext().startActivity(intent);}
+                Intent intent3 = new Intent(view.getContext(), Announcements.class);
+                view.getContext().startActivity(intent3);}
         });
 
 
