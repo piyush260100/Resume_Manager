@@ -7,6 +7,51 @@
     android:background="@drawable/background1"
     tools:context=".HomeActivity">
 
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimaryDark"
+        app:headerLayout="@layout/nav_header_layout"
+        app:layout_constraintEnd_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="510dp">
+
+            <Button
+                android:id="@+id/edit_profile"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_image"
+                android:backgroundTint="#76FF03"
+                android:drawableRight="@drawable/ic_edit_black_24dp"
+                android:drawablePadding="-20dp"
+                android:elevation="0dp"
+                android:paddingRight="30dp"
+                android:text="Edit Profile" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/edit_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_image"
+                android:backgroundTint="#f44336"
+                android:drawableRight="@drawable/ic_logout"
+                android:drawablePadding="-40dp"
+                android:elevation="0dp"
+                android:paddingRight="30dp"
+                android:text="Logout" />
+        </RelativeLayout>
+    </com.google.android.material.navigation.NavigationView>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/resume_creator_view"
         android:layout_width="160dp"
