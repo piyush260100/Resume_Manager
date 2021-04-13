@@ -2,6 +2,7 @@ package com.example.rp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -37,6 +38,48 @@ public class ResumeCreator extends AppCompatActivity {
         image = findViewById(R.id.navHeadImage);
         bottomNavigationView = findViewById(R.id.bottomNavigationView2);
 
+        personal_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), personal_detail.class);
+                view.getContext().startActivity(intent);}
+        });
+
+
+        education.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), education.class);
+                view.getContext().startActivity(intent);}
+        });
+
+        skill.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), skill.class);
+                view.getContext().startActivity(intent);}
+        });
+
+        achievements.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), achievement.class);
+                view.getContext().startActivity(intent);}
+        });
+
+        projects.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), project.class);
+                view.getContext().startActivity(intent);}
+        });
+
+        objective.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), objective.class);
+                view.getContext().startActivity(intent);}
+        });
 
 
     }
