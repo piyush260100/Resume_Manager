@@ -60,10 +60,11 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/personal_info_icon"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
+            android:contentDescription="personal_info"
             app:layout_constraintBottom_toBottomOf="@+id/personal_details_view"
             app:layout_constraintStart_toStartOf="@+id/personal_details_view"
             app:layout_constraintTop_toTopOf="@+id/personal_details_view"
@@ -82,17 +83,18 @@
             app:layout_constraintTop_toBottomOf="@+id/personal_details_view" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/education_icon"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
+            android:contentDescription="education"
             app:layout_constraintBottom_toBottomOf="@+id/education_view"
             app:layout_constraintStart_toStartOf="@+id/education_view"
             app:layout_constraintTop_toTopOf="@+id/education_view"
             app:srcCompat="@drawable/education_icon" />
 
         <View
-            android:id="@+id/view3"
+            android:id="@+id/skill_view"
             android:layout_width="370dp"
             android:layout_height="60dp"
             android:layout_marginStart="16dp"
@@ -104,17 +106,18 @@
             app:layout_constraintTop_toBottomOf="@+id/education_view" />
 
         <ImageView
-            android:id="@+id/skill_view"
+            android:id="@+id/skill_icon"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="@+id/view3"
-            app:layout_constraintTop_toTopOf="@+id/view3"
+            android:contentDescription="skill"
+            app:layout_constraintStart_toStartOf="@+id/skill_view"
+            app:layout_constraintTop_toTopOf="@+id/skill_view"
             app:srcCompat="@drawable/skill_icon" />
 
         <View
-            android:id="@+id/objective_view"
+            android:id="@+id/achievement_view"
             android:layout_width="370dp"
             android:layout_height="60dp"
             android:layout_marginStart="16dp"
@@ -123,16 +126,17 @@
             android:background="@drawable/rounded_heading"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view3" />
+            app:layout_constraintTop_toBottomOf="@+id/skill_view" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/achievement_icon"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/objective_view"
-            app:layout_constraintStart_toStartOf="@+id/objective_view"
-            app:layout_constraintTop_toTopOf="@+id/objective_view"
+            android:contentDescription="Achivement"
+            app:layout_constraintBottom_toBottomOf="@+id/achievement_view"
+            app:layout_constraintStart_toStartOf="@+id/achievement_view"
+            app:layout_constraintTop_toTopOf="@+id/achievement_view"
             app:srcCompat="@drawable/achievements_icon" />
 
         <View
@@ -145,20 +149,21 @@
             android:background="@drawable/rounded_heading"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/objective_view" />
+            app:layout_constraintTop_toBottomOf="@+id/achievement_view" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/project_icon"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="12dp"
+            android:contentDescription="project"
             app:layout_constraintBottom_toBottomOf="@+id/project_view"
             app:layout_constraintStart_toStartOf="@+id/project_view"
             app:layout_constraintTop_toTopOf="@+id/project_view"
             app:srcCompat="@drawable/project_icon_2" />
 
         <View
-            android:id="@+id/achievement"
+            android:id="@+id/objective_view"
             android:layout_width="370dp"
             android:layout_height="60dp"
             android:layout_marginStart="16dp"
@@ -170,14 +175,93 @@
             app:layout_constraintTop_toBottomOf="@+id/project_view" />
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/objective_icon"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="12dp"
-            app:layout_constraintBottom_toBottomOf="@+id/achievement"
-            app:layout_constraintStart_toStartOf="@+id/achievement"
-            app:layout_constraintTop_toTopOf="@+id/achievement"
+            android:contentDescription="objective"
+            app:layout_constraintBottom_toBottomOf="@+id/objective_view"
+            app:layout_constraintStart_toStartOf="@+id/objective_view"
+            app:layout_constraintTop_toTopOf="@+id/objective_view"
             app:srcCompat="@drawable/objective_icon" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Personal Details"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/personal_details_view"
+            app:layout_constraintStart_toEndOf="@+id/personal_info_icon"
+            app:layout_constraintTop_toTopOf="@+id/personal_details_view" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Education"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/education_view"
+            app:layout_constraintStart_toEndOf="@+id/education_icon"
+            app:layout_constraintTop_toTopOf="@+id/education_view" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/skills"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/skill_icon"
+            app:layout_constraintStart_toEndOf="@+id/skill_icon"
+            app:layout_constraintTop_toTopOf="@+id/skill_icon" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Achievements"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/achievement_view"
+            app:layout_constraintStart_toEndOf="@+id/achievement_icon"
+            app:layout_constraintTop_toTopOf="@+id/achievement_view" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Projects"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/project_view"
+            app:layout_constraintStart_toEndOf="@+id/project_icon"
+            app:layout_constraintTop_toTopOf="@+id/project_view" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Objective"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/objective_view"
+            app:layout_constraintStart_toEndOf="@+id/objective_icon"
+            app:layout_constraintTop_toTopOf="@+id/objective_view" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
