@@ -33,7 +33,6 @@ public class HomeActivity extends AppCompatActivity {
     ImageView image;
     NavigationView nv;
     SharedPreferences pref;
-    Button edit, logout;
 
     private int[] img = {R.drawable.boy, R.drawable.girl1, R.drawable.boyspecs, R.drawable.girl2, R.drawable.man, R.drawable.girl, R.drawable.boynormal, R.drawable.girl3};
 
@@ -88,7 +87,7 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         if (ema.equals("admin")) {
-            edit.setVisibility(View.GONE);
+            editprofile.setVisibility(View.GONE);
         }
 
         editprofile.setOnClickListener(new View.OnClickListener()

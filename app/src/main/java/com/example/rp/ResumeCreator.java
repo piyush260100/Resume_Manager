@@ -1,14 +1,18 @@
 package com.example.rp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationMenu;
+import com.google.android.material.navigation.NavigationView;
 
 public class ResumeCreator extends AppCompatActivity {
 
@@ -22,6 +26,14 @@ public class ResumeCreator extends AppCompatActivity {
     ImageView image;;
     View bottomNavigationView;
 
+    Databasehelper db;
+    NavigationView nv;
+    SharedPreferences pref;
+    DrawerLayout dl;
+
+    private int[] img = {R.drawable.boy, R.drawable.girl1, R.drawable.boyspecs, R.drawable.girl2, R.drawable.man, R.drawable.girl, R.drawable.boynormal, R.drawable.girl3};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,10 +45,15 @@ public class ResumeCreator extends AppCompatActivity {
         achievements=findViewById(R.id.achievement_view);
         projects=findViewById(R.id.project_view);
         objective=findViewById(R.id.objective_view);
-        name = findViewById(R.id.navHeadName);
-        email = findViewById(R.id.navHeadEmail);
-        image = findViewById(R.id.navHeadImage);
         bottomNavigationView = findViewById(R.id.bottomNavigationView2);
+
+        db = new Databasehelper(this);
+        nv = findViewById(R.id.nav_view);
+        View v = nv.getHeaderView(0);
+        pref = getApplicationContext().getSharedPreferences("mypref", MODE_PRIVATE);
+        name = v.findViewById(R.id.navHeadName);
+        email = v.findViewById(R.id.navHeadEmail);
+        image = v.findViewById(R.id.navHeadImage);
 
         personal_info.setOnClickListener(new View.OnClickListener() {
             @Override
