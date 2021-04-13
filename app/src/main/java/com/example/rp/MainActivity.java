@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         username = findViewById(R.id.usernameTextInput);
         password = findViewById(R.id.passwordTextInput);
         signIn = findViewById(R.id.signin_button);
-        signUp = findViewById(R.id.signup_text);
+        signUp = findViewById(R.id.signUp);
 
 
         pref = getApplicationContext().getSharedPreferences("mypref", MODE_PRIVATE);
