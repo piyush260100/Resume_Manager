@@ -106,29 +106,6 @@
             app:srcCompat="@drawable/education_icon" />
 
         <View
-            android:id="@+id/skill_view"
-            android:layout_width="370dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/rounded_heading"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/education_view" />
-
-        <ImageView
-            android:id="@+id/skill_icon"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="skill"
-            app:layout_constraintStart_toStartOf="@+id/skill_view"
-            app:layout_constraintTop_toTopOf="@+id/skill_view"
-            app:srcCompat="@drawable/skill_icon" />
-
-        <View
             android:id="@+id/achievement_view"
             android:layout_width="370dp"
             android:layout_height="60dp"
@@ -162,6 +139,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/achievement_view" />
+
+        <View
+            android:id="@+id/skill_view"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_heading"
+            android:contentDescription="skill_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/education_view" />
 
         <ImageView
             android:id="@+id/project_icon"
@@ -232,9 +222,9 @@
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/skill_icon"
-            app:layout_constraintStart_toEndOf="@+id/skill_icon"
-            app:layout_constraintTop_toTopOf="@+id/skill_icon" />
+            app:layout_constraintBottom_toBottomOf="@+id/skill_view"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/skill_view" />
 
         <TextView
             android:id="@+id/textView12"
@@ -274,6 +264,16 @@
             app:layout_constraintBottom_toBottomOf="@+id/objective_view"
             app:layout_constraintStart_toEndOf="@+id/objective_icon"
             app:layout_constraintTop_toTopOf="@+id/objective_view" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/skill_view"
+            app:layout_constraintStart_toStartOf="@+id/skill_view"
+            app:layout_constraintTop_toTopOf="@+id/skill_view"
+            app:srcCompat="@drawable/skill_icon" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

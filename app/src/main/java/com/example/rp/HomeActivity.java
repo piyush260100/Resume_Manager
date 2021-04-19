@@ -55,6 +55,7 @@ public class HomeActivity extends AppCompatActivity {
         email = v.findViewById(R.id.navHeadEmail);
         image = v.findViewById(R.id.navHeadImage);
 
+
         String ema = pref.getString("KEY_USER", null);
 
         if (!ema.equals("admin")) {
@@ -110,7 +111,6 @@ public class HomeActivity extends AppCompatActivity {
                 finish();
             }
         });
-
 
 
     }

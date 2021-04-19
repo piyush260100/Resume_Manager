@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RP">
-        <activity android:name=".QuizTime"></activity>
+        <activity android:name=".project"></activity>
+        <activity android:name=".objective" />
+        <activity android:name=".achievement" />
+        <activity android:name=".skill" />
+        <activity android:name=".education" />
+        <activity android:name=".personal_detail" />
+        <activity android:name=".QuizTime" />
         <activity android:name=".ResumeCreator" />
         <activity android:name=".Announcements" />
         <activity android:name=".Edit_Profile" />
