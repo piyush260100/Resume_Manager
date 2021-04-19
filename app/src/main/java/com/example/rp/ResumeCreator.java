@@ -48,7 +48,7 @@ public class ResumeCreator extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView2);
 
         db = new Databasehelper(this);
-        
+
         personal_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
