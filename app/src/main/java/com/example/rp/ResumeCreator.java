@@ -48,13 +48,7 @@ public class ResumeCreator extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView2);
 
         db = new Databasehelper(this);
-        nv = findViewById(R.id.nav_view);
-        View v = nv.getHeaderView(0);
-        pref = getApplicationContext().getSharedPreferences("mypref", MODE_PRIVATE);
-        name = v.findViewById(R.id.navHeadName);
-        email = v.findViewById(R.id.navHeadEmail);
-        image = v.findViewById(R.id.navHeadImage);
-
+        
         personal_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
